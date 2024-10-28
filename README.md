@@ -55,4 +55,17 @@ p(4) = D+AA-A population
 p(5) = D+AAA- population
 p(6) = sink population
 
+How to Run:
+  Place input.txt in the same directory as main.m.
+  Run main.m in MATLAB.
+  View progress and output statistics in the MATLAB command window.
+  Check the results.mat file for detailed results, including rate matrices, quantum yield, and energy efficiency.
+  
+Outputs:
+  Quantum Yield (OUT.PLOT.QY): Quantum yield for each combination of ΔG and R (formatted for easy plotting in Origin Pro)
+  Energy Efficiency (OUT.PLOT.EE): Energy efficiency for each combination of ΔG and R (formatted for easy plotting in Origin Pro)
+  Rate Matrices (OUT.PLOT.RATES.kFET, kBET, k2G, k3G, k4G): Forward, backward, and recombination rates for each transition (formatted for easy     
+                                                            plotting in Origin Pro)
+  Summary (OUT.SUMMARY): Contains the maximum energy efficiency, the corresponding ΔG and R values, and key parameters.
+
 Questions? Please feel free to contact Jon at jonathan.schultz@duke.edu
