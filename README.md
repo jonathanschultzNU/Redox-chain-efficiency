@@ -23,24 +23,29 @@ File Descriptions:
   results.mat: Contains the output structure OUT with all computed data, including rate matrices, quantum yield, and energy efficiency matrices.
 
 Description of inputs: 
-R_points.......number of inter-cofactor separations to be simulated
-deltaG_points..number of delta G values to be simulated
-beta...........wavefunction decay constant
-log_ti.........initial time (order of magnitude)
-log_tf.........final time (order of magnitude)
-R_min..........minimum inter-cofactor separation [Angstroms]
-
-R_max..........maximum inter-cofactor separation [Angstroms]
-
-d_cofactor.....cofactor diameter [Angstroms]
-deltaG_max.....maximum driving force for FET [eV]
-deltaG_min.....minimum driving force for FET [eV]
-lambda_c.......classical reorganization energy (outer- and inner-sphere contributions) [eV]
-S..............Huang-Rhys factor for high-frequency vibration (S = lambda_vq/(hbar*omega)
-atoms..........number of atoms in each cofactor
-Ei.............initial photon energy deposited [eV]
-log_ksink......log10(sink rate [s-1])
-log_kESdecay...log10(excited-state decay rate [s-1])
+  savepop         save population dynamics (1 = true, 0 = false)
+  print_outputs   print full outputs for all iterations (1 = true, 0 = false)
+  R_points        number of inter-cofactor separations to be simulated
+  deltaG_points   number of delta G values to be simulated
+  R_min           minimum inter-cofactor separation [Angstroms]
+  R_max           maximum inter-cofactor separation [Angstroms]
+  deltaG_max      maximum driving force for FET [eV]
+  deltaG_min      minimum driving force for FET [eV]
+  kbT             Boltzman factor
+  V0              Maximum electronic coupling (as implemented by Hopfield 1974)
+  Ei              initial photon energy deposited [eV]
+  lambda_c        classical reorganization energy (outer- and inner-sphere contributions) [eV]
+  beta            wavefunction decay constant
+  atoms           number of atoms in each cofactor
+  bond_length     crude bond length to use in calculation of cofactor diameter (approximated as a perfect circle)
+  S               Huang-Rhys factor for high-frequency vibration (S = lambda_vq/(hbar * omega)
+  vibfreq         Frequency of quantum mode (hbar * omega)  
+  quanta          Maximum vibrational quanta
+  log_ksink       log10(sink rate [s-1]) (order of magnitude)
+  log_kESdecay    log10(excited-state decay rate [s-1]) (order of magnitude)
+  log_ti          log10(initial time) (order of magnitude)
+  log_tf          log10(final time) (order of magnitude)
+  timepoints      total number of timepoints at which to calculate the populations
 
 Notation for the population vectors:
 p(1) = ground state population
