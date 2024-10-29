@@ -50,6 +50,34 @@ Description of inputs:
   log_tf          log10(final time) (order of magnitude)
   timepoints      total number of timepoints at which to calculate the populations
 
+Example input file:
+  save_populations 0
+  print_outputs 0
+  save_results 1
+  plot_results 1
+  file_name test
+  R_points 151
+  deltaG_points 151
+  R_min 0
+  R_max 15
+  deltaG_max 0
+  deltaG_min -0.4667
+  kbT 0.025
+  V0 2.7
+  log_kESdecay 9
+  log_ksink 2
+  lambda_c 0.3
+  Ei 1.4
+  beta 1.4
+  atoms 20
+  bond_length 1.5
+  S 0
+  vibfreq 0.15
+  quanta 100
+  log_ti -14
+  log_tf 0
+  timepoints 1000
+
 Notation for the population vectors:
 p(1) = ground state population
 p(2) = D*AAA population
