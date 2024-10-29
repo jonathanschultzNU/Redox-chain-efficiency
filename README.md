@@ -22,6 +22,9 @@ File Descriptions:
   input.txt: Input file containing the simulation parameters (inter-cofactor separations, rates, energies, etc.).
   results.mat: Contains the output structure OUT with all computed data, including rate matrices, quantum yield, and energy efficiency matrices.
 
+Input stucture:
+  The input file (input.txt) is expected to have variable names in the first column and values in the second column.
+
 Description of inputs: 
   savepop         save population dynamics (1 = true, 0 = false)
   print_outputs   print full outputs for all iterations (1 = true, 0 = false)
@@ -59,9 +62,10 @@ How to Run:
   Place input.txt in the same directory as main.m.
   Run main.m in MATLAB.
   View progress and output statistics in the MATLAB command window.
-  Check the results.mat file for detailed results, including rate matrices, quantum yield, and energy efficiency.
+  Check the output .png file for quantum yield and energy efficiency results
+  Check the output .mat file for detailed results, including rate matrices, quantum yield, and energy efficiency.
   
-Outputs:
+Contents of the output .mat file:
   Quantum Yield (OUT.PLOT.QY): Quantum yield for each combination of ΔG and R (formatted for easy plotting in Origin Pro)
   Energy Efficiency (OUT.PLOT.EE): Energy efficiency for each combination of ΔG and R (formatted for easy plotting in Origin Pro)
   Rate Matrices (OUT.PLOT.RATES.kFET, kBET, k2G, k3G, k4G): Forward, backward, and recombination rates for each transition (formatted for easy     
