@@ -100,4 +100,7 @@ Contents of the output .mat file:
                                                             plotting in Origin Pro)
   Summary (OUT.SUMMARY): Contains the maximum energy efficiency, the corresponding ΔG and R values, and key parameters.
 
+Citation:
+  Please use the following to cite this code: [10.5281/zenodo.14035760](https://doi.org/10.5281/zenodo.14035760)
+
 Questions? Please feel free to contact Jon at jonathan.schultz@duke.edu
